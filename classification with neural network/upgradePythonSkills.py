@@ -24,11 +24,40 @@ def how_np_isin():
     print(e[mask3])
     # [2 5]
 
-
 # verschachtelte for loop
 # +++++++++++++++++++++++++
-a = np.array([111,222,333,111,111])
-label_map = {111:0, 222:1, 333:1}
-c = np.array([label_map[v] for v in a])
-print(c)
-# [0 1 1 0 0]
+def verschachtelte_for_loop():
+    a = np.array([111,222,333,111,111])
+    label_map = {111:0, 222:1, 333:1}
+    c = np.array([label_map[v] for v in a])
+    print(c)
+    # [0 1 1 0 0]
+
+
+# np.zeros()
+# +++++++++++++++++++++++++++
+def how_np_zeros():
+    a = np.zeros((3,2))
+    print(a)
+    # [[0. 0.]
+    #  [0. 0.]
+    #  [0. 0.]]
+
+    b = np.zeros(5)
+    print(b)
+    # [0. 0. 0. 0. 0.]
+
+    c = np.zeros((3,3,3))
+    print(c.ndim)
+    # 3
+
+# np.arange()
+def how_np_arange():
+    a = np.arange(7)
+    print(a)
+    # [0 1 2 3 4 5 6]
+
+    b = np.arange(0,10,3)
+    print(b)
+    # [0 3 6 9]
+

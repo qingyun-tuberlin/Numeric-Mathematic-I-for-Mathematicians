@@ -61,3 +61,30 @@ def how_np_arange():
     print(b)
     # [0 3 6 9]
 
+
+def use_np_array_eigenschaft():
+    a = np.array([0,1,2,3])
+    b = np.zeros((4,5))
+    print(b)
+    b[a,1]=2
+    print(b)
+    """ [[0. 0. 0. 0. 0.]
+        [0. 0. 0. 0. 0.]
+        [0. 0. 0. 0. 0.]
+        [0. 0. 0. 0. 0.]]
+        
+        [[0. 2. 0. 0. 0.]
+        [0. 2. 0. 0. 0.]
+        [0. 2. 0. 0. 0.]
+        [0. 2. 0. 0. 0.]] """
+
+def how_np_log():
+    print(np.log(2.73)) # base is e)
+    # np.float64(1.0043016091968684)
+    print(np.log10(100))
+    # np.float64(2.0)
+    print(np.log2(4)) # base 2
+    # np.float64(2.0)
+    print(np.log1p(1.7)) 
+    # base e, it calculates log(1+x)
+    # np.float64(0.9932517730102833)

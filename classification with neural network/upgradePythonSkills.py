@@ -88,3 +88,21 @@ def how_np_log():
     print(np.log1p(1.7)) 
     # base e, it calculates log(1+x)
     # np.float64(0.9932517730102833)
+
+def max_maximum():
+    a = max(1,2)
+    print(a) # 2
+    b = [1,2,3]
+    c = [4,5,6]
+    print(max(b,c)) # [4, 5, 6]
+    d = np.array([b])
+    e = np.array([c])
+    f = np.maximum(d,e)
+    print(f) # [[4 5 6]]
+    print(type(f)) # <class 'numpy.ndarray'>
+    print(f[0][1]) # 5
+
+def py_np_abs():
+    print(-np.abs(10))
+    print(-abs(10))
+

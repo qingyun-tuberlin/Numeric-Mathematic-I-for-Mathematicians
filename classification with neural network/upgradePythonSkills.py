@@ -90,6 +90,7 @@ def how_np_log():
     # np.float64(0.9932517730102833)
 
 def max_maximum():
+
     a = max(1,2)
     print(a) # 2
     b = [1,2,3]
@@ -102,7 +103,47 @@ def max_maximum():
     print(type(f)) # <class 'numpy.ndarray'>
     print(f[0][1]) # 5
 
+
+    # array([[0, 1],
+    #       [2, 3]])
+    a = np.arange(4).reshape((2,2))
+    # array([2, 3])
+    b = np.max(a, axis=0) 
+    # array([1, 3])
+    c = np.max(a, axis=1)
+    d = np.max(a, axis=1, keepdims=True)
+    print(d)
+    # [[1]
+    #  [3]]
+
+    
 def py_np_abs():
     print(-np.abs(10))
     print(-abs(10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

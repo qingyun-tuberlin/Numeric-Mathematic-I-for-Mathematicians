@@ -123,9 +123,40 @@ def py_np_abs():
 
 
 
+# how to use np.random
+# https://numpy.org/devdocs/reference/random/generated/numpy.random.rand.html
 
+# how to use @, how to do matrix operation
+# matrix multiplication operator， A x B 
+# A @ B is equivilent to A.dot(B). np.matmul(A,B)
 
+# how to use dictionary
+def how_use_dictionary():
+    fruit = {
+        "apple": 10,
+        "pear": 20,
+        "kiwi":30
+    }
+    print(type(fruit))
+    #<class 'dict'>
+    print(fruit["apple"])
+    # 10
+    for key, value in fruit.items():
+        print(value)
+    # 10
+    # 20
+    # 30
+    for key in fruit:
+        print(key)
+    # apple
+    # pear
+    # kiwi
 
+    for value in fruit.values():
+        print(value)
+    # 10
+    # 20
+    # 30
 
 
 
